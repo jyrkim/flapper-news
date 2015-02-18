@@ -1,6 +1,6 @@
 
 source 'https://rubygems.org'
-ruby '2.1.0'
+#ruby '2.1.0'
 
 gem 'devise', '~> 3.4.0'
 
