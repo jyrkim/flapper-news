@@ -10,7 +10,7 @@ angular.module('flapperNews')
 
       posts.addComment(post.id, {
         body: $scope.body,
-        author: 'user',
+        author: 'user'
       }).success(function(comment) {
 
         if ($scope.post.comments === undefined) 

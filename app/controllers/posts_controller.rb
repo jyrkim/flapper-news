@@ -1,21 +1,20 @@
 class PostsController < ApplicationController
+  before_filter :authenticate_user!, only: [:create, :upvote]
 
   def index
     respond_with Post.all
   end
 
   def create
-    respond_with Post.create(post_params)
+    #logger.info "Post.create user #{current_user.id}" 
+    respond_with Post.create(post_params.merge(user_id: current_user.id))
   end
 
   def show
-       logger.info "show action entered... " + params[:id]
-
-
-    #respond_with Post.find(params[:id])
-
+    #render Post.find(params[:id])
+    #the above results in internal server error 500
     render json: Post.find(params[:id]).to_json 
-    ## http://apidock.com/rails/ActionController/MimeResponds/ClassMethods/respond_to
+    # http://apidock.com/rails/ActionController/MimeResponds/ClassMethods/respond_to
   end
 
   def upvote
@@ -25,10 +24,12 @@ class PostsController < ApplicationController
     respond_with post
   end
 
+
   private
 
   def post_params
-    logger.info "post_params entered..."
+
     params.require(:post).permit(:link, :title)
+
   end
 end

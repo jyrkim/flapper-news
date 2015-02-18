@@ -1,17 +1,11 @@
 class CommentsController < ApplicationController
+  before_filter :authenticate_user!, only: [:create, :upvote]
 
   def create
-        logger.info "Comments create action entered... " + params[:body]
-
 
     post = Post.find(params[:post_id])
 
-    comment = post.comments.create(comment_params)
-    #comment = post.comments.new(comment_params)
-
-    #comment.post = post
-
-    #comment.save
+    comment = post.comments.create(comment_params.merge(user: current_user))
 
     respond_with post, comment
   end
@@ -23,6 +17,7 @@ class CommentsController < ApplicationController
 
     respond_with post, comment
   end
+
 
   private
   def comment_params
