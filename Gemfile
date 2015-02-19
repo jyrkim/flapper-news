@@ -1,6 +1,8 @@
 
 source 'https://rubygems.org'
-#ruby '2.1.0'
+#ruby '2.0.0'
+
+gem 'ngannotate-rails'
 
 gem 'devise', '~> 3.4.0'
 
