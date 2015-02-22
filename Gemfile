@@ -44,6 +44,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#heroku settings 
+#https://devcenter.heroku.com/articles/getting-started-with-rails4#webserver
+gem 'puma'
+
+gem "rack-timeout"
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

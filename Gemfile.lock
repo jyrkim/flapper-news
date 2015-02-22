@@ -68,9 +68,12 @@ GEM
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.5)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rack-timeout (0.2.0)
     rails (4.0.2)
       actionmailer (= 4.0.2)
       actionpack (= 4.0.2)
@@ -137,6 +140,8 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   ngannotate-rails
   pg
+  puma
+  rack-timeout
   rails (= 4.0.2)
   rails_12factor
   sass-rails (~> 4.0.0)
