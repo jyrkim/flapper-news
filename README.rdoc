@@ -1,28 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here’s the code for: AngularJS Tutorial: Learn to Build Modern Web Apps with Angular and Rails by Matt Green and Albert Pai.  
+Source: https://thinkster.io/angular-rails/
 
-Things you may want to cover:
+There was one problem in relation to assets that I run into, and thanks to the great help of Lukas Eklund I was able to solve it.
+More info: http://stackoverflow.com/questions/28694224/heroku-actioncontrollerroutingerror-no-route-matches-get-fonts-glyphicon
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
