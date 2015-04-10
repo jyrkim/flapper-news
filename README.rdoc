@@ -1,7 +1,7 @@
 == README
 
-Here’s the code for: AngularJS Tutorial: Learn to Build Modern Web Apps with Angular and Rails by Matt Green and Albert Pai.  
-Source: https://thinkster.io/angular-rails/
+Web app created after following the instructions of AngularJS Tutorial: Learn to Build Modern Web Apps with Angular and Rails by Matt Green and Albert Pai.  
+URL: https://thinkster.io/angular-rails/
 
 There was one problem in relation to assets that I run into, and thanks to the great help of Lukas Eklund I was able to solve it.
 More info: http://stackoverflow.com/questions/28694224/heroku-actioncontrollerroutingerror-no-route-matches-get-fonts-glyphicon
